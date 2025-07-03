@@ -12,9 +12,9 @@ function App() {
 
   return (
     <>
-      <Section title={"General"}></Section>
-      <Section title={"Poop"}></Section>
-      <Section title={"Work"}></Section>
+      <Section>General</Section>
+      <Section>Education</Section>
+      <Section>Work</Section>
     </>
   )
 }

@@ -2,14 +2,14 @@ import React from 'react'
 import Field from './Field';
 
 interface Props{
-  title: string;
+  children: React.ReactNode;
   fields?: string[];
 }
 
-const Section = ({title,fields = []}:Props) => {
+const Section = ({children,fields = []}:Props) => {
   return (
     <>
-    <div>{title}</div>
+    <div>{children}</div>
     <div>
       {
         fields.map((field) => (<Field title={field}></Field>))
