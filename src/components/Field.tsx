@@ -1,13 +1,14 @@
 import React from 'react'
-
+import "../styles/Fields.css";
 interface Props{
   title: string;
   value?: string;
+  isExpandable?: boolean;
 }
 
-const Field = ({title, value=""}: Props) => {
+const Field = ({title, value="", isExpandable=false}: Props) => {
   return (
-    <div>{title}: {value}</div>
+    <div className="field">{title}: {value}</div>
   )
 }
 

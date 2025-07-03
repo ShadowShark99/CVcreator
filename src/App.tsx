@@ -9,12 +9,14 @@ import Section from './components/Section'
 
 function App() {
   const [count, setCount] = useState(0)
-
+  const generalFields = ["Name", "E-mail", "Phone"];
+  const educationFields = ["School", "Major", "Start Date", "GPA"];
+  const workFields = ["Company", "Position","Responsibilities","Start Date","End Date"];
   return (
     <>
-      <Section>General</Section>
-      <Section>Education</Section>
-      <Section>Work</Section>
+      <Section fields={generalFields}>General</Section>
+      <Section fields={educationFields}>Education</Section>
+      <Section fields={workFields}>Work</Section>
     </>
   )
 }

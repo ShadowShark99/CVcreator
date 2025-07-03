@@ -1,8 +1,12 @@
 import React from 'react'
 
-const EditButton = () => {
+interface Props{
+  setEdit: () => void;
+}
+
+const EditButton = ({setEdit}: Props) => {
   return (
-    <div>EditButton</div>
+    <button onClick={setEdit}>Edit</button>
   )
 }
 
