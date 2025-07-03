@@ -14,7 +14,8 @@ const Field = ({title, initValue="", isExpandable=false, isEdit}: Props) => {
 
   return (
     <>
-      {!isEdit && <div className="field">{title}: {value}</div>}
+      <div className="field">{title}:</div> 
+      {!isEdit && <div>{value}</div>}
       {isEdit && <FieldInput val={value} setVal={setValue}></FieldInput>}
     </>
     
