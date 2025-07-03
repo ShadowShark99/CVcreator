@@ -1,8 +1,12 @@
 import React from 'react'
 
-const SubButton = () => {
+interface Props{
+  handleClick: () => void;
+}
+
+const SubButton = ({handleClick}: Props) => {
   return (
-    <div>SubButton</div>
+    <button onClick={handleClick}>Submit</button>
   )
 }
 

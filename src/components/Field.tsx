@@ -1,14 +1,23 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../styles/Fields.css";
+import FieldInput from './FieldInput';
 interface Props{
   title: string;
-  value?: string;
+  initValue?: string;
   isExpandable?: boolean;
+  isEdit: boolean;
 }
 
-const Field = ({title, value="", isExpandable=false}: Props) => {
+const Field = ({title, initValue="", isExpandable=false, isEdit}: Props) => {
+
+  const [value,setValue] = useState(initValue);
+
   return (
-    <div className="field">{title}: {value}</div>
+    <>
+      {!isEdit && <div className="field">{title}: {value}</div>}
+      {isEdit && <FieldInput val={value} setVal={setValue}></FieldInput>}
+    </>
+    
   )
 }
 
