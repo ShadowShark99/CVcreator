@@ -35,11 +35,15 @@ const Section = ({children,fields = [], isExpandable = false}:Props) => {
     <div className="section">
       
       <div>{children}</div>
-      {
-        mult.map(() => (<Item fields={fields}></Item>))
-      }
-      {isExpandable && <AddButton handleClick={addItem}/>}
-      {isExpandable && <DeleteButton handleClick={deleteItem}/>}
+      <div className="item-list">
+          {
+            mult.map(() => (<Item fields={fields}></Item>))
+          }
+        </div>
+          {isExpandable && <AddButton handleClick={addItem}/>}
+          {isExpandable && <DeleteButton handleClick={deleteItem}/>}
+      
+      
     </div>
     
     
