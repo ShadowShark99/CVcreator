@@ -13,11 +13,11 @@ function App() {
   const educationFields = ["School", "Major", "Start Date", "GPA"];
   const workFields = ["Company", "Position","Responsibilities","Start Date","End Date"];
   return (
-    <>
+    <div className="screen">
       <Section fields={generalFields}>General</Section>
-      <Section fields={educationFields}>Education</Section>
-      <Section fields={workFields}>Work</Section>
-    </>
+      <Section fields={educationFields} isExpandable={true}>Education</Section>
+      <Section fields={workFields} isExpandable={true}>Work</Section>
+    </div>
   )
 }
 

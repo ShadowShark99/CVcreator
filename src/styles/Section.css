@@ -1,0 +1,12 @@
+.section {
+  display: flex;
+  width: auto;
+}
+
+button {
+  height: 50px;
+}
+
+.fields {
+  display: flex;
+}

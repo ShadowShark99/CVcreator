@@ -1,0 +1,11 @@
+.field {
+  font-size: 0.75em;
+}
+
+.fieldDiv {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: baseline;
+  justify-content: baseline;
+  margin-right: 100px;
+}
