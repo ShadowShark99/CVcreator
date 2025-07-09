@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import  { useState } from 'react'
 import "../styles/Field.css";
 import FieldInput from './FieldInput';
 interface Props{

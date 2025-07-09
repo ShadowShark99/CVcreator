@@ -1,7 +1,4 @@
 import React, { useState } from 'react'
-import Field from './Field';
-import EditButton from './EditButton';
-import SubButton from './SubButton';
 import "../styles/Section.css";
 import Item from './Item';
 import AddButton from './AddButton';
